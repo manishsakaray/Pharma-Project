@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>owner registration</title>
+    <link rel="stylesheet" href="./css/register_owner.css" />
+    <script type="text/javascript">
+    	function formValidation(){
+    		var phone_no = document.getElementById("registerownerphone").value;
+			var firstName = document.getElementById("registerownerfirstname").value;
+			var lastName = document.getElementById("registerownerlastname").value;
+			var email = document.getElementById("registerowneremail").value;
+			var username = document.getElementById("registerownerusername").value;
+			var password = document.getElementById("registerownerpassword").value;
+			var reenterpassword = document.getElementById("registerownerreenterpassword").value;
+			
+			
+			if(phone_no === "" || firstName === "" || email === "" || username === "" || password === "" || reenterpassword === "" || lastName === ""){
+				alert("please fill empty fields");
+			}
+			if(password != reenterpassword){
+				alert("password mismatch");
+			}
+    	}
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./index.html"
+          ><img id="logo" src="./images/logo.png" alt="logo"
+        /></a>
+        <ul>
+          <li>
+           <a href="./stores.jsp" >Stores</a>
+            <a href="./offers.jsp" >Offers</a>
+            
+            <a href="./index.html">Home</a>
+            <a href="./contacts.html">Contact</a>
+            <a href="./register.html">Register</a>
+            <span>|</span>
+            <a id="last" href="./login.html"
+              >Log in<img
+                id="profile"
+                src="./images/profile_image.png"
+                alt="login"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="outerdiv">
+        <div id="innerdiv">
+        <form action="registerowner" method="post">
+          <table>
+            <tr>
+              <td>
+                <label for="name">First name<span>*</span>: </label>
+                <input
+                  id="registerownerfirstname"
+                  type="text"
+                  placeholder="eg: john"
+                  name="firstname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">Last name<span>*</span>: </label>
+                <input
+                  id="registerownerlastname"
+                  type="text"
+                  placeholder="eg: geller"
+                  name="lastname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">E-mail<span>*</span>: </label>
+                <input
+                  id="registerowneremail"
+                  type="email"
+                  placeholder="eg: johngeller1551@gmail.com"
+                  name="email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="username">username<span>*</span>: </label>
+                <input
+                  id="registerownerusername"
+                  type="text"
+                  placeholder="eg: johngeller1551"
+                  name="username"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">password<span>*</span>: </label>
+                <input id="registerownerpassword" type="password" name="password" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">re-enter password<span>*</span>: </label>
+                <input id="registerownerreenterpassword" type="password" name="reenterpassword"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Phone<span>*</span></label>
+                <input
+                  id="registerownerphone"
+                  type="tel"
+                  placeholder="eg: +91 987654321"
+                  name="phone"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom: 2px solid gray" align="center">
+                <button
+                  onclick="formValidation()"
+                  id="registerownersubmitbutton"
+                  type="submit"
+                >
+                  next
+                </button>
+              </td>
+            </tr>
+            </br>
+            <tr>
+              <td id="bottomtext" align="center">
+                Already have an account? <a href="./login_owner.html">Log in</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

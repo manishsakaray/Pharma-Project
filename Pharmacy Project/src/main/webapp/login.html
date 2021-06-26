@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <script type="text/javascript">
+    	
+    	function loginValidation() {
+    	  var username = document.getElementById("loginusername").value;
+    	  var password = document.getElementById("loginpassword").value;
+    	  if (username === "" || password === "") alert("invalid username or password");
+    	}
+    
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./index.html"
+          ><img id="logo" src="./images/logo.png" alt="logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="./stores.jsp" >Stores</a>
+            <a href="./offers.jsp" >Offers</a>
+            
+            <a href="./index.html">Home</a>
+            <a href="./contacts.html">Contact</a>
+            <a href="./register.html">Register</a>
+            <span>|</span>
+            <a id="last" href="./login.html"
+              >Log in<img
+                id="profile"
+                src="./images/profile_image.png"
+                alt="login"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="outerdiv">
+        <div id="innerdiv">
+        <p align="center"> <a href="./login_owner.html">click here</a> to login as owner </p>
+         <form action="login" method="post">
+          <table>
+            <tr>
+              <td align="center">
+                <input id="loginusername" type="text" placeholder="Username:" name="username" />
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <input
+                  id="loginpassword"
+                  type="password"
+                  placeholder="Password:" name="password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="border-bottom: 2px solid gray">
+                <button
+                  id="loginsubmitbutton"
+                  type="submit"
+                  style="text-align: center" 
+                  onclick="loginValidation()"
+                >
+                  Log in
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td id="bottomtext">
+                <a href="">forgot password? </a><span>|</span
+                ><a href="./register.html"> create account</a>
+              </td>
+            </tr>
+          </table>
+         </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

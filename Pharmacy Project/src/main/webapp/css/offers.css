@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+#last {
+  margin-left: 60px;
+}
+header div {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+header #logo {
+  height: 100%;
+  position: static;
+}
+
+header ul {
+  text-decoration: none;
+  list-style: none;
+  float: right;
+  margin-top: 40px;
+}
+
+header a {
+  margin-left: 50px;
+  color: white;
+  font-family: serif;
+  font-weight: 300;
+}
+
+header span {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+header #profile {
+  height: 20px;
+  size: 20px;
+}
+
+header a:hover {
+  color: black;
+}
+
+body {
+  background-image: url("../images/background_image.jpeg");
+  background-size: auto;
+  background-size: cover;
+  background-color: rgba(156, 156, 156, 0.541);
+  background-blend-mode: color-dodge;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+
+.data{
+	width: 70%;
+	margin: 20px auto;
+}
+
+.retrieveddata{
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    font-size: 18px;
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+    border-radius: 6px;
+}
+
+.trfield{
+	background-color: rgba(255, 255, 255, 0.808);
+	border-radius: 6px;
+	height: 80px;
+	text-align: center;
+	width: 70%;
+	margin: 20px auto;
+}

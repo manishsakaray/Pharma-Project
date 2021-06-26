@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+#last {
+  margin-left: 50px;
+}
+header div {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+header #logo {
+  height: 100%;
+  position: static;
+}
+
+header ul {
+  text-decoration: none;
+  list-style: none;
+  float: right;
+  margin-top: 40px;
+}
+
+header a {
+  margin-left: 50px;
+  color: white;
+  font-family: serif;
+  font-weight: 300;
+}
+
+header span {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+header #profile {
+  height: 20px;
+  size: 20px;
+}
+
+header a:hover {
+  color: black;
+}
+
+body {
+  background-image: url("../images/background_image.jpeg");
+  background-size: auto;
+  background-size: contain;
+  background-color: rgba(156, 156, 156, 0.541);
+  background-blend-mode: color-dodge;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+
+main #searcharea {
+  width: 100%;
+  margin-top: 120px;
+}
+
+main table td {
+  border-radius: 40px;
+  background-color: white;
+}
+
+main table {
+  margin: 0 auto;
+  width: 50%;
+  height: 40px;
+  border: 3px solid rgb(97, 97, 236);
+  background-color: white;
+  border-radius: 40px;
+}
+
+#homesearchbox {
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  box-shadow: none;
+  border: none;
+}
+
+#homesearchbox:focus {
+  outline: none;
+}
+
+main #homesearchbutton {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  margin: 0 auto;
+  border-radius: 40px;
+  outline: none;
+  background-color: rgba(0, 128, 0, 0.616);
+  border: 0px solid;
+}
+
+main #homesearchbutton:hover {
+  background-color: rgba(0, 128, 0, 0.774);
+}
+
+#heading {
+  width: 50%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#heading h1 {
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+
+#heading span {
+  font-style: italic;
+  color: rgba(0, 128, 0, 0.616);
+}
+
+#heading span:hover {
+  color: rgba(0, 128, 0, 0.774);
+}
+
+main #about {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main #about h2 {
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: 2px solid rgb(88, 88, 88);
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  border: 2px solid black;
+}
+
+footer #footer {
+  border-top: 4px solid white;
+  width: 80%;
+  height: 90%;
+  margin: 40px auto;
+}
+
+#footer ul {
+  float: right;
+  margin-right: 20%;
+  list-style-type: none;
+}
+
+#footer #footerlogo {
+  float: left;
+  width: 120px;
+  margin-top: 45px;
+  border-right: 2px solid rgb(97, 97, 97);
+}
+
+footer #authors {
+  width: 300px;
+  height: 120px;
+  margin-left: 135px;
+  margin-top: 45px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+footer #authors span {
+  font-weight: 600;
+  font-size: 17px;
+  font-style: italic;
+}

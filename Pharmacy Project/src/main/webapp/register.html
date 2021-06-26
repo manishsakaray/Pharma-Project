@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/register.css" />
+    <script type="text/javascript">
+    	function formValidation(){
+    		var phone_no = document.getElementById("registerphone").value;
+			var firstName = document.getElementById("registerfirstname").value;
+			var lastName = document.getElementById("registerlastname").value;
+			var email = document.getElementById("registeremail").value;
+			var username = document.getElementById("registerusername").value;
+			var password = document.getElementById("registerpassword").value;
+			var reenterpassword = document.getElementById("registerreenterpassword").value;
+			var area = document.getElementById("registerarea").value;
+			
+			if(phone_no === "" || firstName === "" || email === "" || username === "" || password === "" || reenterpassword === "" || area === "" || lastName === ""){
+				alert("please fill empty fields");
+			}
+			if(password != reenterpassword){
+    			alert("password mismatch!");
+    		}
+    	}
+    	
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./index.html"
+          ><img id="logo" src="./images/logo.png" alt="logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="./stores.jsp" >Stores</a>
+            <a href="./offers.jsp" >Offers</a>
+            
+            <a href="./index.html">Home</a>
+            <a href="./contacts.html">Contact</a>
+            <a href="./register.html">Register</a>
+            <span>|</span>
+            <a id="last" href="./login.html"
+              >Log in<img
+                id="profile"
+                src="./images/profile_image.png"
+                alt="login"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="outerdiv" style="height: 800px;  margin:60px auto;">
+        <div id="innerdiv">
+          
+          <form action="registercustomer" method="post">
+          <table>
+            <tr>
+              <td style="text-align: center; font-size: 18px">
+                Do you own a store? Register as owner
+                <a href="./register_owner.html">here</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">First name<span>*</span>: </label>
+                <input
+                  id="registerfirstname"
+                  type="text"
+                  placeholder="eg: john"
+                  name="firstname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">Last name<span>*</span>: </label>
+                <input
+                  id="registerlastname"
+                  type="text"
+                  placeholder="eg: geller"
+                  name="lastname"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">E-mail<span>*</span>: </label>
+                <input
+                  id="registeremail"
+                  type="email"
+                  placeholder="eg: johngeller1551@gmail.com"
+                  name="email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="area">Area<span>*</span>: </label>
+                <input
+                  id="registerarea"
+                  type="text"
+                  placeholder="eg: gandhinagar"
+                  name="area"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="username">username<span>*</span>: </label>
+                <input
+                  id="registerusername"
+                  type="text"
+                  placeholder="eg: johngeller1551"
+                  name="username"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">password<span>*</span>: </label>
+                <input id="registerpassword" type="password" name="password"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">re-enter password<span>*</span>: </label>
+                <input id="registerreenterpassword" type="password" name="reenterpassword"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Phone<span>*</span></label>
+                <input
+                  id="registerphone"
+                  type="tel"
+                  placeholder="eg: +91 987654321"
+                  name="phone"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="border-bottom: 2px solid gray" align="center">
+                <button id="registersubmitbutton" type="submit" onclick="formValidation()">
+                  Register
+                </button>
+              </td>
+            </tr>
+            <br />
+            <tr>
+              <td id="bottomtext" align="center">
+                Already have an account? <a href="./login.html">Log in</a>
+              </td>
+            </tr>
+          </table>
+          </form>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+    </main>
+  </body>
+</html>
